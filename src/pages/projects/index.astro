@@ -1,0 +1,74 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <h1 transition:name="title">Projects</h1>
+  <section>
+    <p>
+      In my eternal quest of learning and exploring I'm building all sorts of
+      projects, ranging from one offs because I had an itch to flavour of the
+      month type projects all the way up to rather ambitious platforms
+    </p>
+  </section>
+  <section>
+    <h3>The ambitious projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <article transition:name="project-game-slam">
+        <h3 transition:name="game-slam">Game slam</h3>
+        <p>A twist on game slams</p>
+        <p>
+          A platform for creating and partaking in challenges to level up game
+          developers while promoting artists
+        </p>
+        <footer>
+          <a href="projects/game-slam">Project</a>
+        </footer>
+      </article>
+      <article transition:name="project-cardbinder">
+        <h3 transition:name="cardbinder">Card Binder</h3>
+        <p>Internal tools</p>
+        <p>
+          A platform for managing and sharing card collections for card game
+          enthusiasts, namely for Yugioh TCG
+        </p>
+        <footer>
+          <a href="projects/cardbinder">Project</a>
+        </footer>
+      </article>
+      <article transition:name="project-foldy">
+        <h3 transition:name="foldy">Foldy</h3>
+        <p>A companion app build for the refold method of learning languages</p>
+        <footer>
+          <a href="projects/foldy">Project</a>
+        </footer>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h3>Scratching an itch type projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <article transition:name="project-space-traders">
+        <h3 transition:name="space-traders">Space Traders</h3>
+        <p>A GUI for a space game that is played through an API</p>
+        <footer>
+          <a href="projects/space-traders">Project</a>
+        </footer>
+      </article>
+      <article transition:name="project-document-builder">
+        <h3 transition:name="document-builder">Document builder</h3>
+        <p>A way to generate pdf documents based around user input.</p>
+        <footer>
+          <a href="projects/document-builder">Project</a>
+        </footer>
+      </article>
+      <article transition:name="project-qwidditch">
+        <h3 transition:name="qwidditch">Qwidditch</h3>
+        <p>A way of me contributing to the Qwik.js framework ecosystem</p>
+        <footer>
+          <a href="projects/qwidditch">Project</a>
+        </footer>
+      </article>
+    </div>
+  </section>
+</Layout>
