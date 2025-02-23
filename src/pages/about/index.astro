@@ -3,85 +3,111 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1 transition:name="title">Hi, I'm Benjamin</h1>
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I have a lot of interests and I'm in a lucky position that my proffesion
-      just so happen to be one of them as well. I'm a "software engineer" which
-      is a fancy way of saying I'm a web developer. On top of loving the
-      proffession itself I'm also blessed to be at a job I love. Currently
-      working as a software engineer at Testaviva, currently focusing on the
-      internal tools the my legal advisor colleagues work. Trying to make their
-      day better through a platform we have called "Backoffice" or "BO" for
-      short. Fun fact that is also the name of my dad and you can guess whether
-      that influenced my decision to suggest that name.
-    </p>
-  </section>
-  <section>
-    <h2>Hobbies</h2>
-    <p>
-      While being a web dev does take up a lot of my time, I'm a multifaceted
-      person and here are some of my other hobbies.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <article>
-        <header>Web dev</header>
+  <div class="container mx-auto px-4 py-8 prose prose-neutral max-w-none">
+    <h1 class="text-4xl font-bold mb-8" transition:name="title">
+      Hi, I'm Benjamin
+    </h1>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <div class="card bg-base-200 p-6">
         <p>
-          Blogposts, youtube videos and side projects are how I quench the
-          thirst for knowledge I have in this domain. It helps me become better
-          at my job but it's also just a way for me to explore different ideas
-          and in my own little way make the world a better place
+          I have a lot of interests and I'm in a lucky position that my
+          proffesion just so happen to be one of them as well. I'm a "software
+          engineer" which is a fancy way of saying I'm a web developer. On top
+          of loving the proffession itself I'm also blessed to be at a job I
+          love. Currently working as a software engineer at Testaviva, currently
+          focusing on the internal tools the my legal advisor colleagues work.
+          Trying to make their day better through a platform we have called
+          "Backoffice" or "BO" for short. Fun fact that is also the name of my
+          dad and you can guess whether that influenced my decision to suggest
+          that name.
         </p>
-      </article>
-      <article>
-        <header>Game dev</header>
-        <p>
-          What? More development? Yes it's something I dabble in from time to
-          time as well. I'm very much still at an entry level learning phase in
-          this domain. I've always wanted to make games, ever since I was a
-          little kid. For a long time I didn't actually think I'd be able to do
-          it, but ever since I discovered my love for programming, the reality
-          of making a game seems more and more doable.
-        </p>
-        <p>
-          I even went as far as to study game development abroad in Canada for a
-          semester during my studies.
-        </p>
-        <p>
-          I'm learning with a game engine called Godot and primarily focused on
-          courses and small game mechanics rather than a fully blown game
-        </p>
-      </article>
-      <article>
-        <header>Gaming</header>
-        <p>
-          Surprise surprise I love playing video games alway have always will.
-          Currently the games I play the most TFT and LoL
-        </p>
-        <p>
-          Rather than listing all games I play or have played here are some
-          recents: Hell Divers 2, Golf with friends, Valheim
-        </p>
-      </article>
-      <article>
-        <header>Board games</header>
-        <p>Wait board games can be a hobby? Yes.</p>
-        <p>
-          I love them. My favorite is Catan and currently the most expensive in
-          my collection is Hero Quest
-        </p>
-      </article>
-      <article>
-        <header>Music</header>
-        <p>
-          I have a guitar and a piano keyboard as well as a dj set, I'm very
-          much a beginner in all avenues of music, but I do see myself being
-          able to fully play songs at some day in the future. I'm gamifying my
-          learning experience through an app called YouSician which basically
-          turns learning music into Guitar hero
-        </p>
-      </article>
-    </div>
-  </section>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Hobbies</h2>
+      <p class="mb-6">
+        While being a web dev does take up a lot of my time, I'm a multifaceted
+        person and here are some of my other hobbies.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <header class="card-title">Web dev</header>
+            <p>
+              Blogposts, youtube videos and side projects are how I quench the
+              thirst for knowledge I have in this domain. It helps me become
+              better at my job but it's also just a way for me to explore
+              different ideas and in my own little way make the world a better
+              place
+            </p>
+          </div>
+        </article>
+
+        <article class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <header class="card-title">Game dev</header>
+            <p>
+              What? More development? Yes it's something I dabble in from time
+              to time as well. I'm very much still at an entry level learning
+              phase in this domain. I've always wanted to make games, ever since
+              I was a little kid. For a long time I didn't actually think I'd be
+              able to do it, but ever since I discovered my love for
+              programming, the reality of making a game seems more and more
+              doable.
+            </p>
+            <p>
+              I even went as far as to study game development abroad in Canada
+              for a semester during my studies.
+            </p>
+            <p>
+              I'm learning with a game engine called Godot and primarily focused
+              on courses and small game mechanics rather than a fully blown game
+            </p>
+          </div>
+        </article>
+
+        <article class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <header class="card-title">Gaming</header>
+            <p>
+              Surprise surprise I love playing video games alway have always
+              will. Currently the games I play the most TFT and LoL
+            </p>
+            <p>
+              Rather than listing all games I play or have played here are some
+              recents: Hell Divers 2, Golf with friends, Valheim
+            </p>
+          </div>
+        </article>
+
+        <article class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <header class="card-title">Board games</header>
+            <p>Wait board games can be a hobby? Yes.</p>
+            <p>
+              I love them. My favorite is Catan and currently the most expensive
+              in my collection is Hero Quest
+            </p>
+          </div>
+        </article>
+
+        <article class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <header class="card-title">Music</header>
+            <p>
+              I have a guitar and a piano keyboard as well as a dj set, I'm very
+              much a beginner in all avenues of music, but I do see myself being
+              able to fully play songs at some day in the future. I'm gamifying
+              my learning experience through an app called YouSician which
+              basically turns learning music into Guitar hero
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
 </Layout>
